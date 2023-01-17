@@ -1,0 +1,190 @@
+@media screen and (max-width: 1000px) {
+  #home .subtitle {
+    width: 100%;
+  }
+
+  #skills .programs {
+    padding: 2em 1em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #apps .cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5em;
+    margin: auto;
+    width: 100%;
+  }
+  #apps .duo {
+    width: auto;
+  }
+
+  #modal {
+    width: calc(100% - 2em);
+    height: calc(100% - 7em);
+    top: 5em;
+    padding: 1em 2em;
+  }
+  .modal-header {
+    padding: 1rem 0;
+  }
+  #modal h4 {
+    margin-top: 2.5em;
+  }
+  #modal h5 {
+    margin: 1.5em 0;
+  }
+  #modal p {
+    margin: 2em 0 3em;
+  }
+  .modal-body {
+    padding: 0;
+  }
+  .before-after {
+    gap: 1em;
+  }
+  .modal-body img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  #projects .duo {
+    flex-direction: column;
+  }
+  #projects .img {
+    border-radius: 13px 13px 0 0;
+    height: fit-content;
+  }
+  #projects img {
+    width: 100%;
+  }
+  #projects .txt {
+    margin-top: .5em;
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  header {
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+  }
+  nav>a {
+    height: 100%;
+    line-height: 3.25rem;
+  }
+  nav #hamburger {
+    position: absolute;
+    right: 0;
+    margin-right: 28px;
+    padding: 20px 0 12px;
+    background: none;
+    border: none;
+  }
+  nav #hamburger span {
+    display: block;
+    width: 32px;
+    height: 3px;
+    border-radius: 3px;
+    margin-bottom: 7px;
+    background-color: white;
+    transition: .35s;
+  }
+  nav #hamburger.active span:nth-of-type(1) {
+    transform: translateY(10px) rotate(45deg) ;
+  }
+  nav #hamburger.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  nav #hamburger.active span:nth-of-type(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  nav #navi {
+    display: none;
+    flex-direction: column;
+    line-height: 3.25rem;
+    position: absolute;
+    right: 0;
+    top: 52px;
+  }
+  nav #navi.active {
+    display: block;
+  }
+  nav li {
+    background: var(--clr-accent-0);
+    width: 160px;
+  }
+  nav li a {
+    width: 100%;
+    padding: 0;
+  }
+  nav li a:hover {
+    background: var(--clr-accent-1);
+  }
+  
+  #skills .programs {
+    padding: 2em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #apps .cont {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #apps .img {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  #home {
+    padding: 6em 1.5em;
+  }
+  #home .second span {
+    display: block;
+  }
+  
+  #about br.responsive {
+    display: none;
+  }
+  section {
+    padding: 5rem 1rem;
+  }
+  #skills .programs {
+    padding: 1rem .5rem .5rem;
+    grid-gap: .5rem;
+  }
+  #skills .program {
+    padding: .75rem;
+  }
+
+
+  #projects .img {
+    border-radius: 13px 13px 0 0;
+    height: fit-content;
+    min-width: unset;
+    width: 100%;
+  }
+  #projects img {
+    width: 100%;
+  }
+  #projects .txt {
+    margin: 0em 1.5rem 1.5rem;
+    width: unset;
+  }
+
+  .modal-header {
+    padding: .5rem 0 .5rem;
+  }
+  .modal-footer {
+    padding: 2rem 0;
+  }
+  #fs-frm-inputs {
+    padding: 2rem 1rem;
+  }
+  #contact .card input[type="submit"] {
+    padding: 1.25rem 2.5rem;
+  }
+}
