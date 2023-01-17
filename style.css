@@ -314,8 +314,9 @@ nav a:hover {
 }
 /* apps */
 #apps .cont {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2.5rem;
 }
 #apps p {
   color: #d1d5db;
@@ -324,7 +325,6 @@ nav a:hover {
 #apps .duo {
   display: flex;
   flex-direction: column;
-  width: 30%;
 }
 #apps .app {
   display: flex;
@@ -363,6 +363,13 @@ nav a:hover {
   color: var(--clr-accent-3);
 }
 
+/* react */
+#apps.react .cont {
+  grid-template-columns: repeat(2, 1fr);
+}
+#apps.react .img {
+  height: 300px;
+}
 /* modal */
 #modal-backdrop {
   display: none;

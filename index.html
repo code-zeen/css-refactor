@@ -44,12 +44,12 @@
     <p>
       저는 미국에서 물리학을 공부하다 진로 고민과 코로나19 사태로인해 대학을 그만두게 되었습니다.<br>
       그 이후로 무엇을 해야할지 정말 막막한 나날들을 보내다가<br class="responsive">
-      작년 12월, 우연히 웹퍼블리싱 과정이 눈에 들어왔습니다.<br><br>
+      우연히 웹퍼블리싱 과정이 눈에 들어왔습니다.<br><br>
 
       평소에 미술과 음악, 그리고 컴퓨터와 수학・과학에 흥미를 가졌던 저는<br class="responsive">
       논리, 계산, 자동화, 그리고 심미적 요소까지 어우러진 퍼블리싱 (+ 코딩)을 배우면서 새로운 열정을 찾을 수 있었습니다.
       <br><br>
-      현재 더 좋은 퍼블리셔로 성장하기 위해 꾸준히 새로운 기술을 독학하는 중이고,<br class="responsive">
+      현재 더 좋은 퍼블리셔 및 개발자로 성장하기 위해 꾸준히 새로운 기술을 독학하는 중이고,<br class="responsive">
       저의 꿈은 언젠가 풀스택 개발자가 되는것입니다.
     </p>
     <hr>
@@ -179,12 +179,20 @@
           <span>Xubuntu</span>
         </div>
       </div>
-      <div class="program wip">
+      <div class="program">
         <div class="icon">
           <img src="images/icons/react.png" alt="react">
         </div>
         <div class="txt">
           <span>React</span>
+        </div>
+      </div>
+      <div class="program wip">
+        <div class="icon">
+          <img src="images/icons/sql.png" alt="sql">
+        </div>
+        <div class="txt">
+          <span>SQL</span>
         </div>
       </div>
     </div>
@@ -193,7 +201,7 @@
 <!-- projects -->
   <section id="projects" class="container">
     <h2>Project</h2>
-    <p>퍼블리싱 양성과정 중 제작한 사이트 입니다. 개인 기여도는 각각 100% 입니다.</p>
+    <p>퍼블리싱 양성과정 중 디자인 하여 제작한 사이트 입니다. 개인 기여도는 각각 100% 입니다.</p>
     <div class="duo">
       <div class="img">
         <img src="images/happy-people/renewal-main-page-thumbnail.png" alt="">
@@ -220,7 +228,7 @@
       </div>
       <div class="txt">
         <h3>만개의 레시피<span>2022.04</span></h3>
-        <p>자바스크립과 그리드를 활용한 masonry 레이아웃</p>
+        <p>JavaScript를 활용한 masonry 레이아웃</p>
         <button id="recipes-btn">자세히 보기 ></button>
       </div>
     </div>
@@ -229,7 +237,7 @@
 <!-- apps -->
   <section id="apps" class="container">
     <h2>Mini App</h2>
-    <p>순수 자바스크립으로 코딩한 어플 모음입니다.</p>
+    <p>자바스크립을 공부하며 제작한 순수 자바스크립 어플 모음입니다.</p>
     <div class="cont">
       <div class="duo">
         <a class="app" href="https://cute-beijinho-769f53.netlify.app/" target="_blank" title="새 탭에 열기">
@@ -275,6 +283,75 @@
       </div>
     </div>
   </section>
+
+<!-- react -->
+  <section id="apps" class="react container">
+    <h2>React Projects</h2>
+    <p>리액트로 개발한 간단한 Web App 입니다.</p>
+    <div class="cont">
+      <div class="duo">
+        <a class="app" href="https://inquisitive-gaufre-c2fe64.netlify.app/" target="_blank" title="새 탭에 열기">
+          <div class="img">
+            <img src="images/scrimba/travel.png" alt="travel journal">
+          </div>
+          <h3>여행 일지</h3>
+        </a>
+        <div class="links">
+          <a href="https://github.com/code-zeen/scrimba/tree/main/react/travel-journal" class="github"><i
+              class="fa-brands fa-github"></i> 코드 보기</a>
+          <a href="https://inquisitive-gaufre-c2fe64.netlify.app/" class="new-tab" target="_blank" title="새 탭에 열기"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> 사이트 바로가기</a>
+        </div>
+        <p>가장 첫 프로젝트로 커스텀 컴포넌트, props, map을 사용하여 하나의 json 파일의 정보를 옮겨 담아 반복되는 컴포넌트의 정적 레이아웃을 제작하였습니다.</p>
+      </div>
+      <div class="duo">
+        <a class="app" href="https://stalwart-nougat-2968d9.netlify.app/" target="_blank" title="새 탭에 열기">
+          <div class="img">
+            <img src="images/scrimba/meme-generator.png" alt="meme generator">
+          </div>
+          <h3>밈 (meme) 제작기</h3>
+        </a>
+        <div class="links">
+          <a href="https://stalwart-nougat-2968d9.netlify.app/" class="github"><i
+              class="fa-brands fa-github"></i> 코드 보기</a>
+          <a href="https://cool-mermaid-a75f96.netlify.app/" class="new-tab" target="_blank" title="새 탭에 열기"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> 사이트 바로가기</a>
+        </div>
+        <p>폼 (form)을 통해 받는 유저의 input을 리엑트 상태와 동기화 시켜 조건부 렌더링을 하는 간단한 어플을 제작하였습니다. 밈 이미지는 useEffect와 API를 통해 데이터베이스에서 무작위로 불러오게 하였습니다.</p>
+      </div>
+      <div class="duo">
+        <a class="app" href="https://cool-mermaid-a75f96.netlify.app/" target="_blank" title="새 탭에 열기">
+          <div class="img">
+            <img src="images/scrimba/tenzies.png" alt="tenzies">
+          </div>
+          <h3>주사위 게임</h3>
+        </a>
+        <div class="links">
+          <a href="https://github.com/code-zeen/scrimba/tree/main/react/tenzies-game-KR" class="github"><i
+              class="fa-brands fa-github"></i> 코드 보기</a>
+          <a href="https://cool-mermaid-a75f96.netlify.app/" class="new-tab" target="_blank" title="새 탭에 열기"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> 사이트 바로가기</a>
+        </div>
+        <p>객체지향 프로그래밍 개념으로 각각 "주사위"를 오브젝트화 하여 데이터를 담았습니다. 모든 조건이 맞을때 (모든 선택된 주사위가 같은 수일때) 게임을 이기고 자신의 최고기록이 남아 재도전할 수 있는 단순한 게임을 제작하였습니다.</p>
+      </div>
+      <div class="duo">
+        <a class="app" href="https://celadon-praline-de8a8a.netlify.app/" target="_blank" title="새 탭에 열기">
+          <div class="img">
+            <img src="images/scrimba/quizzical.png" alt="quizzical">
+          </div>
+          <h3>상식 퀴즈 (개발 진행중)</h3>
+        </a>
+        <div class="links">
+          <a href="https://github.com/code-zeen/scrimba/tree/main/react/open-trivia-trial-2" class="github"><i
+              class="fa-brands fa-github"></i> 코드 보기</a>
+          <a href="https://celadon-praline-de8a8a.netlify.app/" class="new-tab" target="_blank" title="새 탭에 열기"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> 사이트 바로가기</a>
+        </div>
+        <p>잡상식 질문 API의 데이터를 받아 객관식 퀴즈 UI로 표현하여 유저가 답을 고른 후 확인 할 수 있는 퀴즈 앱입니다. 옳은 답을 틀린 답 속에 무작위 순서로 배치되게 하였습니다. 점수기록 요소와 질문 초기화 기능을 추가할 예정입니다.</p>
+      </div>
+    </div>
+  </section>
+
 
 <!-- modals -->
   <div id="modal-backdrop">

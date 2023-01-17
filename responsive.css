@@ -129,7 +129,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  #apps .cont {
+  #apps .cont,
+  #apps.react .cont {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
