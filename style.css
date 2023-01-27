@@ -10,7 +10,7 @@
 /* custom */
 :root {
   --clr-light: #efefef;
-  --clr-dark: #1c1c1c;
+  --clr-dark: #121212;
   --clr-card: #1f2937;
   --clr-card-hover: #273549;
 
@@ -47,7 +47,8 @@ body {
   line-height: 1.6;
 }
 header {
-  background: var(--clr-accent-9);
+  background: rgb(109,41,208);
+background: linear-gradient(90deg, var(--clr-accent-9) 0%, var(--clr-accent-0) 35%, var(--clr-accent-7) 100%);
   box-shadow: var(--bs);
 }
 .container {
@@ -110,12 +111,15 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  height: 100%;
 }
 nav li {
   height: 100%;
 }
 nav a {
   padding: 0 2em;
+  height: 100%;
+  line-height: 3.25rem;
 }
 nav a:hover {
   background: var(--clr-accent-0);
@@ -157,20 +161,7 @@ nav a:hover {
 #home .github span {
   font-size: var(--fs-body);
 }
-#home .mobile-notice {
-  display: none;
-}
 
-/* responsive notice */
-@media (max-width: 700px) {
-  #home .mobile-notice {
-    display: block;
-    font-size: var(--fs-h3);
-  }
-  #home .mobile-notice i {
-    color: yellow;
-  }
-}
 /* about */
 #about p {
   line-height: 2.5;
