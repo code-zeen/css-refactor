@@ -8,15 +8,18 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  #apps .cont {
+  .apps .cont {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5em;
     margin: auto;
     width: 100%;
   }
-  #apps .duo {
+  .apps .duo {
     width: auto;
+  }
+  #react-apps .img {
+    height: auto;
   }
 
   #modal {
@@ -128,12 +131,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  #apps .cont,
-  #apps.react .cont {
+  .apps .cont,
+  .react.apps .cont {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  #apps .img {
+  .apps .img {
     height: auto;
   }
 }
