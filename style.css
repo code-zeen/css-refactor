@@ -26,10 +26,10 @@
   --ff-sans-serif: 'Noto Sans Kr', sans-serif;
   --ff-monospace: 'Share Tech Mono', monospace;
 
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
-  --fs-body: 1rem;
+  --fs-h1: 3rem;        /*  48px  */
+  --fs-h2: 2.25rem;     /*  36px  */
+  --fs-h3: 1.25rem;     /*  20px  */
+  --fs-body: 1rem;      /*  16px  */
 
   --bs: .25em .25em .75em rgba(0, 0, 0, .25),
         .125em .125em .25em rgba(0, 0, 0, .15);
