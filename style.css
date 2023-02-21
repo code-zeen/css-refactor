@@ -43,6 +43,9 @@ html, body {
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   display: inline-block;
   text-decoration: none;
@@ -102,20 +105,25 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 1em;
+  z-index: 1;
   width: 80vw;
   height: 100vh;
   background: #1c1c1c;
+  box-shadow: var(--bs);
 }
 #nav.open {
   visibility: unset;
   opacity: 1;
   transform: translateX(0);
 }
+#nav button {
+  margin: 1em;
+  padding: .5em 1em;
+}
 #nav ul li a {
   display: block;
-  font-size: 1.6em;
-  padding: .3em;
+  font-size: 1.4em;
+  padding: .6em;
 }
 #nav ul li.active {
   background: var(--clr-accent-0);
@@ -126,7 +134,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .5em 0;
+  padding: .5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+  background: var(--clr-dark-bg);
 }
 #hamburger {
   display: flex;
@@ -275,7 +290,6 @@ a#theme {
 #projects .duo {
   margin-top: 2em;
   border-radius: 3px;
-  overflow: hidden;
   background: var(--clr-card);
   box-shadow: var(--bs);
 }
@@ -301,7 +315,6 @@ a#theme {
 }
 #projects button {
   font-size: var(--fs-body);
-  font-weight: 600;
   padding: .5em 1.5em;
   border: none;
   border-radius: 5px;
@@ -309,7 +322,7 @@ a#theme {
   color: #fff;
 }
 #projects button:hover {
-  background: var(--clor-accent-1);
+  background: var(--clr-accent-1);
   transition: .25s;
 }
 
@@ -408,6 +421,8 @@ a#theme {
 #contact input[type="submit"]:active {
   bottom: var(--clr-accent-0);
 }
+
+
 
 /****** Modal FIX ******/
 /* modal */
