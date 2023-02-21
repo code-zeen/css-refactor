@@ -6,50 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/ee9d395ada.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
+  <!-- <link rel="stylesheet" href="responsive.css"> -->
 </head>
 
 <body>
+  <nav id="nav" class="container">
+    <button>X</button>
+    <ul>
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skill</a></li>
+      <li><a href="#projects">Designs</a></li>
+      <li><a href="#js-apps">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
   <header>
-    <nav class="container">
-      <a href="#home">Home</a>
-      <div id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul id="navi">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skill</a></li>
-        <li><a href="#projects">Project</a></li>
-        <li><a href="#apps">Mini App</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <a id="logo" href="#">aejin</a>
+    <a id="theme" href="#">Dark</a>
   </header>
 
 <!-- home -->
   <section id="home" class="container">
     <h1 class="title first">안녕하세요!</h1>
-    <h1 class="title second">프론트엔드 개발자 <br><span><strong>김애진</strong>입니다.</span></h1>
+    <h1 class="title second">프론트엔드 개발자</h1>
+    <h1 class="title third"><strong>김애진</strong>입니다.</h1>
     <p class="subtitle">front-end dev</p>
-    <a href="https://github.com/code-zeen" class="github"><i
-      class="fa-brands fa-github"></i> <span>GitHub</span></a>
+    <div class="github">
+      <a href="https://github.com/code-zeen"><i
+        class="fa-brands fa-github"></i> <span>GitHub</span></a>
+    </div>
   </section>
 
 <!-- about -->
   <section id="about" class="container">
     <h2>About Me</h2>
     <p>
-      저는 미국에서 물리학을 공부하다 진로 고민과 코로나19 사태로인해 대학을 그만두게 되었습니다.<br>
-      그 이후로 무엇을 해야할지 정말 막막한 나날들을 보내다가<br class="responsive">
+      저는 미국에서 물리학을 공부하다 진로 고민과 코로나19로 인해 대학을 그만두게 되었습니다. 무엇을 해야할지 고민하던 중에
       우연히 웹퍼블리싱 과정이 눈에 들어왔습니다.<br><br>
 
-      평소에 미술과 음악, 그리고 컴퓨터와 수학・과학에 흥미를 가졌던 저는<br class="responsive">
-      논리, 계산, 자동화, 그리고 심미적 요소까지 어우러진 퍼블리싱 (+ 코딩)을 배우면서 새로운 열정을 찾을 수 있었습니다.
+      평소에 디지털 아트, 피아노, 컴퓨터, 과학 등에 흥미를 가졌던 저는 퍼블리싱과 코딩을 배우며 새로운 열정을 찾을 수 있었습니다.
       <br><br>
-      현재 더 좋은 퍼블리셔 및 개발자로 성장하기 위해 꾸준히 새로운 기술을 독학하는 중이고,<br class="responsive">
-      저의 꿈은 언젠가 풀스택 개발자가 되는것입니다.
+      현재 더 좋은 개발자로 성장하기 위해 꾸준히 새로운 기술을 독학하는 중이고,
+      저의 꿈은 풀스택 개발자가 되는것입니다.
     </p>
     <hr>
     <p class="history">
@@ -64,7 +68,7 @@
 <!-- skills -->
   <section id="skills" class="container">
     <h2>Skill</h2>
-    <p>현재 보유하고있는 스킬과 퍼블리싱에 사용하는 소프트웨어 목록입니다. </p>
+    <p>제가 사용하는 기술스택과 소프트웨어 목록입니다. </p>
     <div class="programs">
       <div class="program">
         <div class="icon">
@@ -88,6 +92,14 @@
         </div>
         <div class="txt">
           <span>JavaScript</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/react.png" alt="react">
+        </div>
+        <div class="txt">
+          <span>React</span>
         </div>
       </div>
       <div class="program">
@@ -148,22 +160,6 @@
       </div>
       <div class="program">
         <div class="icon">
-          <img src="images/icons/vscode.svg" alt="vscode">
-        </div>
-        <div class="txt">
-          <span>VS Code</span>
-        </div>
-      </div>
-      <div class="program">
-        <div class="icon">
-          <img src="images/icons/GitHub-Mark-Light-64px.png" alt="github">
-        </div>
-        <div class="txt">
-          <span>GitHub</span>
-        </div>
-      </div>
-      <div class="program">
-        <div class="icon">
           <img src="images/icons/git.svg" alt="git">
         </div>
         <div class="txt">
@@ -172,18 +168,26 @@
       </div>
       <div class="program">
         <div class="icon">
-          <img src="images/icons/xubuntu.svg" alt="xubuntu">
+          <img src="images/icons/vscode.svg" alt="vscode">
         </div>
         <div class="txt">
-          <span>Xubuntu</span>
+          <span>VS Code</span>
         </div>
       </div>
       <div class="program">
         <div class="icon">
-          <img src="images/icons/react.png" alt="react">
+          <img src="images/icons/vite.svg" alt="vite">
         </div>
         <div class="txt">
-          <span>React</span>
+          <span>Vite</span>
+        </div>
+      </div>
+      <div class="program">
+        <div class="icon">
+          <img src="images/icons/xubuntu.svg" alt="xubuntu">
+        </div>
+        <div class="txt">
+          <span>Xubuntu</span>
         </div>
       </div>
       <div class="program wip">
@@ -199,7 +203,7 @@
 
 <!-- projects -->
   <section id="projects" class="container">
-    <h2>Project</h2>
+    <h2>Designs</h2>
     <p>퍼블리싱 양성과정 중 디자인 하여 제작한 사이트 입니다. 개인 기여도는 각각 100% 입니다.</p>
     <div class="duo">
       <div class="img">
@@ -301,7 +305,7 @@
           <a href="https://inquisitive-gaufre-c2fe64.netlify.app/" class="new-tab" target="_blank" title="새 탭에 열기"><i
               class="fa-solid fa-arrow-up-right-from-square"></i> 사이트 바로가기</a>
         </div>
-        <p>가장 첫 프로젝트로 커스텀 컴포넌트, props, map을 사용하여 하나의 json 파일의 정보를 옮겨 담아 반복되는 컴포넌트의 정적 레이아웃을 제작했습니다.</p>
+        <p>가장 첫 과제로 커스텀 컴포넌트, props, map을 사용하여 하나의 json 파일의 정보를 옮겨 담아 반복되는 컴포넌트의 정적 레이아웃을 제작했습니다.</p>
       </div>
       <div class="duo">
         <a class="app" href="https://stalwart-nougat-2968d9.netlify.app/" target="_blank" title="새 탭에 열기">
@@ -316,7 +320,7 @@
           <a href="https://cool-mermaid-a75f96.netlify.app/" class="new-tab" target="_blank" title="새 탭에 열기"><i
               class="fa-solid fa-arrow-up-right-from-square"></i> 사이트 바로가기</a>
         </div>
-        <p>Form을 통해 받는 유저의 input을 상태에 업데이트 되게 하여 리액트가 제어할 수 있는 제어 컴포넌트로 만들었습니다. 사용자의 텍스트를 이미지 위에 렌더링을 하는 간단한 어플을 제작하였습니다. 밈 이미지는 useEffect로 API를 fetch 하였고, 버튼 클릭시 무작위 이미지를 불러옵니다.</p>
+        <p>Form을 통해 받는 유저의 input을 리액트가 제어할 수 있는 제어 컴포넌트로 만들었습니다. 사용자의 텍스트를 이미지 위에 렌더링을 하는 간단한 어플입니다. 밈 이미지는 useEffect로 API를 fetch 하였고, 버튼 클릭시 무작위 이미지를 불러옵니다.</p>
       </div>
       <div class="duo">
         <a class="app" href="https://cool-mermaid-a75f96.netlify.app/" target="_blank" title="새 탭에 열기">
@@ -346,7 +350,7 @@
           <a href="https://celadon-praline-de8a8a.netlify.app/" class="new-tab" target="_blank" title="새 탭에 열기"><i
               class="fa-solid fa-arrow-up-right-from-square"></i> 사이트 바로가기</a>
         </div>
-        <p>잡상식 질문 API를 객관식 퀴즈 UI로 표현하였습니다. 퀴즈 질문과 답을 props로 자녀 컴포넌트에게 전달하고 옳은 답을 틀린 답 속에 무작위 순서로 배치되게 하였습니다. Check Answers 버튼으로 답을 확인 및 채점 할 수 있고, New Quiz 버튼을 눌러 새로운 질문들을 받아 올 수 있습니다.</p>
+        <p>잡상식 질문 API를 객관식 퀴즈 UI로 표현하였습니다. Check Answers 버튼으로 답을 확인 및 채점 할 수 있고, New Quiz 버튼을 눌러 새로운 질문들을 받아 올 수 있습니다.</p>
       </div>
       <div class="duo">
         <a class="app" href="https://helpful-cranachan-ee1707.netlify.app/" target="_blank" title="새 탭에 열기">
