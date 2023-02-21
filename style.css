@@ -397,6 +397,7 @@ a#theme {
   background: var(--clr-accent-0);
   color: #fff;
   border: none;
+  height: 40px;
   padding: 1em;
   margin-top: 1.5em;
   border-radius: 5px;
