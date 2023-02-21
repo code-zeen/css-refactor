@@ -393,6 +393,7 @@ a#theme {
   background: #fff;
 }
 #contact input[type="submit"] {
+  display: block;
   background: var(--clr-accent-0);
   color: #fff;
   border: none;
