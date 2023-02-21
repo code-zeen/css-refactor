@@ -1,5 +1,7 @@
 # code-zeen.github.io
 
-This is a fork of my own portfolio repo.
+A fork of my own portfolio repo.
 
-You can find the deployment [here](https://dazzling-crostata-2c8478.netlify.app/)
+I've taken the mobile-first responvie design principles, and refactored my portfolio as such.
+
+You can find the deployment [here](https://dazzling-crostata-2c8478.netlify.app/).
